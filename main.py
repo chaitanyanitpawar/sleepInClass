@@ -3,6 +3,9 @@ import schedule
 import time 
 meetId = ""
 email = ""
+periodInHour = ""
+periodInSecond = float(periodInHour)*60
+shutDown = "shutdown /s"
 def attend():
     time.sleep(0.2)
     pyautogui.press('esc',interval=0.1)
@@ -19,6 +22,9 @@ def attend():
     pyautogui.press('enter',interval=5)
     x,y = pyautogui.locateCenterOnScreen('Open.png', confidence = 0.8)
     pyautogui.click(x,y)
+    time.sleep(periodInSecond)
+    pyautogui.write(shutDown)
+    pyautogui.press('enter',interval=5)
     
 if __name__ == "__main__":
     attend()
