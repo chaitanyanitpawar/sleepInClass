@@ -3,6 +3,7 @@ Automation Script to Attend Classes On GoToWebinar
 
 
 ### Requirements:
+ - Windows 10 (Cortana)
  - Python 3.x.x 
  - pyautogui 
  - schedule
